@@ -7,8 +7,8 @@ let package = Package(
         .library(name: "SendGrid", targets: ["SendGrid"])
     ],
     dependencies: [
-        .package(url: "https://github.com/vapor/vapor.git", from: "3.0.0"),
-        ],
+        .package(url: "https://github.com/vapor/vapor.git", from: "4.0.0-beta"),
+    ],
     targets: [
         .target(name: "SendGrid", dependencies: ["Vapor"]),
         .testTarget(name: "SendGridTests", dependencies: ["Vapor", "SendGrid"])
